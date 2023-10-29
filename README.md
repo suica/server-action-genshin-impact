@@ -1,27 +1,30 @@
-# Reboot your computer with React Server Action
+# Start Genshin Impact with React server action
 
-https://github.com/Brooooooklyn/server-action-system-reboot/assets/3468483/ea72957f-3b23-46e7-bb63-2143d430837d
+> 原神，启动！
+
+![GenshinStart](pic/GenshinStart.gif)
 
 ## Steps:
 
 - corepack enable
 - pnpm install
 - pnpm dev
-- click the `Reboot` button on the browser
+- click the `原神，启动！` button on the browser
 
 ## Code snippets
 
 ```tsx
-import { reboot } from '@napi-rs/system-shutdown'
+import { GenshinImpactManager } from "@/lib/genshin-impact";
 
 <form
   action={async () => {
     'use server'
-    reboot()
+    const genshin = new GenshinImpactManager();
+    await genshin.start();
   }}
 >
   <Button>
-    Reboot
+    Genshin, Start!
   </Button>
 </form>
 ```
