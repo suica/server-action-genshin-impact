@@ -2,7 +2,7 @@
 
 > 原神，启动！
 
-![GenshinStart](pic/GenshinStart480.gif)
+![GenshinStart](pic/GenshinStart.gif)
 
 ## Steps:
 
